@@ -1,0 +1,12 @@
+﻿@media only screen and (max-width: 768px) {
+    .classtd {
+        display: inline-block;
+        width: 100% !important;
+    }
+    .input_grid_table {
+        table-layout: fixed;
+    }
+    
+
+
+}

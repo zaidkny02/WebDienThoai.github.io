@@ -1,0 +1,199 @@
+﻿
+.itemIMG {
+    width:400px;
+    background-color: white;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.ghichu {
+    background-color: white;
+}
+.thongso {
+    background-color: white;
+}
+.image {
+    display: flex;
+    align-items: center;
+}
+.div_price {
+    background-color:#ede7f6;display:inline-block;font-size: 1.5rem;
+    border-radius: 0.5rem!important;
+}
+.item {
+    
+            display: flex;
+            background-color:white;
+            width:100%;
+            
+}
+.div_tuvan {
+    display:inline-block;
+    margin:10px;
+    background-color:#fff3cd;
+    font-size: 1.2rem;
+    box-shadow: 0 0 2px 0 rgb(60 64 67 / 70%), 0 0 6px 0 rgb(60 64 67 / 75%);
+    border-radius: 0.5rem!important;
+}
+.text_tuvan {
+    bottom: 20px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+}
+.itemName {
+    font-size: 1.3rem;
+    margin-bottom:10px;
+}
+.itemColor {
+    font-weight:400;
+  border-radius:0.5rem;
+  text-decoration: none;
+  background-color: white;
+  color: #333333;
+  padding: 0.2rem;
+  border-top: 1px solid #080df3;
+  border-right: 1px solid #080df3;
+  border-bottom: 1px solid #080df3;
+  border-left: 1px solid #080df3;
+}
+.itemColor_choose {
+    font-weight:400;
+  border-radius:0.5rem;
+  text-decoration: none;
+  background-color: white;
+  color: #333333;
+  padding: 0.2rem;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+}
+
+
+
+.my_binhluan {
+    padding-top: 10px;
+}
+.btnbinhluan {
+    position: relative;
+    bottom: 20px;
+}
+.list_binhluan {
+    width:30%;
+    box-shadow: 0 0 2px 0 rgb(60 64 67 / 70%), 0 0 6px 0 rgb(60 64 67 / 75%);
+    border-radius: 0.5rem!important
+}
+    .txtbinhluan {
+        width:30%;
+        }
+.hoten {
+    color:#061ee0;
+    margin-right:20px;
+    
+}
+.itemDetail {
+    word-break: break-word;
+}
+.text_li {
+    word-break: break-word;
+}
+.noidung {
+    max-width:30%;
+    word-break: break-word;
+}
+#sGhichu {
+    word-break: break-word;
+}
+.ghichu {
+        padding-top:10px;
+    }
+.old {
+            color: #808080;
+            text-decoration: line-through;
+        }
+.itemPrice {
+    color:#fe0101;
+}
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1000; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+ /* bottom: 30px; */ /* 30px from the bottom */
+  
+  top: 30px;
+  
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@media only screen and (max-width: 768px) {
+
+    .list_binhluan {
+        width:95%;
+        margin:auto;
+    }
+    .div_tuvan {
+        font-size: 1rem;
+    }
+    .div_price {
+        font-size: 1.1rem;
+    }
+    .txtbinhluan {
+        width:100%;
+    }
+    .item {
+        display:block;
+    }
+        .itemIMG {
+            width:100%;
+        }
+    .baohanh {
+        padding:0 0 0 15px;
+    }
+    .btnbinhluan {
+    bottom: auto;
+}
+    .btnthem {
+        text-align:center;
+        margin-bottom:10px;
+    }
+    
+}

@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TestUserSQL.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/mastercss.css" />
+    <link rel="stylesheet" href="css/tablecss.css" />
+    <style>
+        .astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+        }
+
+        .liitem ul {
+	        position: absolute;
+  	        background-color: #f9f9f9;
+  	        text-align:right;
+  	        z-index: 1;
+  	        visibility: hidden;
+  	        padding-inline-start: 0px;
+            
+            
+	    }
+	    li ul:hover li ul li  {
+	        visibility: visible;
+    	    display:block;
+            border:1px solid;
+            background-color:black;
+	    }
+        li ul:hover li ul li:hover  {
+	        background-color:red;
+	    }
+        li ul:hover li ul li a {
+	        text-decoration:none;
+            
+	    }
+	    .liitem {
+	        display:block;
+	    }
+	    .ul_first{
+	        padding-inline-start: 0px;
+		    display: inline-block;
+            min-width: 150px;
+        }
+        .ul_first a{
+	        float:none;
+
+        }
+
+        .dropdownlink {
+            text-decoration:none;
+            
+        }
+        .content {
+            min-height:500px;
+        }
+        .ul_first2{
+	        padding-inline-start: 0px;
+		    
+            min-width: 150px;
+        }
+            
+    </style>
+    <script type="text/javascript">
+        function timkiem() {
+            var timkiem = document.getElementById("txtTimKiem");
+            if (timkiem.value.trim() != "") {
+                window.location.href = "TimKiem_SP.aspx?kw=" + timkiem.value.trim();
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    
+    <form id="headform" >
+        
+    <div class="head"  runat="server">
+     <!--   <div class="logo" style="float:left; height:50px;">
+            <a href="TrangItem.aspx"><p class="logo" >Hải Nam Mobile</p></a>
+        </div>  -->
+        <ul class="navigation" >
+            <li><a href="TrangItem.aspx" class="logo">Hải Nam Mobile</a></li>
+            <li><a href="TrangItem.aspx">Trang chủ</a></li> 
+            <li><a href="CuaHang.aspx">Cửa hàng</a></li>
+            <li style="display:none;">
+                <ul class= "ul_first2" style="text-align:left; ">
+			    <asp:HyperLink CssClass="dropdownlink" Text="Tìm theo hãng"  ID="hyperlink1" runat="server" ></asp:HyperLink>
+			    <li class = "liitem">
+				    <ul runat="server"  id="ulhang" >
+					
+				    </ul>
+			    </li>
+			</ul></li>  
+          <li id="timkiem_master" style="height:0; top:50%; float:left;"><input type="text" class="searchtxt" id="txtTimKiem"  />
+              <input type="button" class="searchbtn" style="margin-top:5px;" id="btnTimkiem" value="Tìm Kiếm" onclick="timkiem();" /></li>
+          
+        <!--    <li><a href="#"></a></li> -->
+            
+                    
+            <li class="right_header"  ><a href="GioHang.aspx" id="giohang_text" runat="server" class="giohang_a">Giỏ hàng</a></li>  
+               
+            <li class="right_header"  >
+                <ul class= "ul_first" >
+			    <asp:HyperLink CssClass="dropdownlink"  ID="hyperlinktaikhoan" runat="server" ></asp:HyperLink>
+			    <li class = "liitem">
+				    <ul runat="server"  id="taikhoanul">
+					
+				    </ul>
+			    </li>
+			</ul></li>         
+        </ul>
+    </div>
+    
+    </form>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer">
+        <div class="left-footer" >
+            <h5>HẢI NAM MOBILE</h5>
+            <p>Điện thoại liên hệ: 0879455495</p>
+            <p>Địa chỉ: Xóm 3c - Khánh Nhạc - Yên Khánh - Ninh Bình</p>
+        </div>
+        <div class="right-footer" >
+            <a href="#"><p>Hướng dẫn mua hàng</p></a>
+            <a href="#"><p>Chính sách bảo hành</p></a>
+            <a href="#"><p>Quy chế hoạt động</p></a>
+        </div>
+    </div>
+
+</body>
+</html>

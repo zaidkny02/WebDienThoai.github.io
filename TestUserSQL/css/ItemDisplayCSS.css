@@ -1,0 +1,187 @@
+﻿body {
+    text-align:center;
+}
+.lstitem {
+    display: inline-block;
+    width:80%;
+    min-height:550px;
+    background-color:white;
+    text-align:center;
+}
+.imgButton {
+    width: 60px;
+    
+    height: 60px;
+    background-image: url(../Images/backtotop.jpg);
+    background-size: 100%;
+
+    display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#divtimkiem {
+    display:none;
+}
+.danhmuc_title {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size:22px;
+    color:#ffd641;
+    font-weight:600;
+}
+.item {
+    display:inline-block;
+    width:20%;
+    box-shadow: 0 0 2px 0 rgb(60 64 67 / 10%), 0 0 6px 0 rgb(60 64 67 / 25%);
+    border-radius: 0.5rem!important;
+    padding-bottom:5px;
+    padding-top:5px;
+    margin:15px;
+    background-color:white;
+    /*text*/
+    overflow:hidden;
+    white-space: nowrap;
+}
+.itemName {
+    
+}
+
+.itemPrice {
+    color:#fe0101;
+}
+.itemIMG {
+    width:100%;
+    background-color: white;
+   
+    
+}
+.itemIMG:hover {
+    transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+}
+.itemReduce {
+    background-color:#dfe122;
+}
+.item:hover .itemName {
+    color:#2156e9;
+}
+    #count {
+        text-align:center;
+    }
+#content {
+    width:70%;
+    margin:auto;
+}
+#paging {
+    
+    text-align:center;
+}
+
+.old {
+            color: #6f6c6c;
+            text-decoration: line-through;
+        }
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1000; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+ /* bottom: 30px; */ /* 30px from the bottom */
+  
+  top: 30px;
+  
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+} 
+
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+ 
+    .lstitem {
+    display: inline-block;
+    width:100%;
+    min-height:550px;
+    
+}   
+
+    .imgButton {
+    width: 40px;
+    
+    height: 40px;
+    
+  bottom: 0px; /* Place the button at the bottom of the page */
+  right: 0px; /* Place the button 30px from the right */
+  
+}
+    .itemName{
+        /*/white-space:unset;*/
+    }
+    #divtimkiem{
+        display:block;
+    }
+    .item {
+    
+    width:40%;
+}
+    .itemIMG{
+        width:100%;
+        min-height:unset;
+
+    }
+    .txtTimKiem {
+        width:auto;
+
+    }
+    .btnTimKiem {
+        width:20%;
+    }
+   
+    
+    
+}

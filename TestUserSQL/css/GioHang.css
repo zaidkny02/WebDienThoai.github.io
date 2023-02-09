@@ -1,0 +1,163 @@
+﻿body {
+    
+}
+.lstitem {
+    display:inline-block;
+    width:80%;
+    background-color:white;
+    padding-left:10px;
+    padding-right:10px;
+}
+.itemThongTin {
+    text-align:right;
+    font-size:1.3vw;
+    color:#808080;
+}
+.input_table {
+    width:100%;
+}
+.itemPrice {
+    color:#fe0101;
+}
+.giohang_title {
+    font-size: 18px;
+    font-weight: 700!important;
+}
+.item {
+            
+            display: flex;
+            box-shadow: 0 0 2px 0 rgb(60 64 67 / 70%), 0 0 6px 0 rgb(60 64 67 / 75%);
+            border-radius: 0.5rem!important;
+            width:100%;
+            margin-bottom:20px;
+            padding-bottom:10px;
+}
+
+.item table     {     
+                    
+
+            }
+.item table tr{
+                font-size:2vw;
+               
+               
+            }
+.itemIMG {
+    margin-top:10px;
+    width:200px;
+    background-color: white;
+    margin-left:5px;
+}
+.btnxoasp {
+    padding:10px; 
+    margin-left:40px;
+    
+}
+.td_btndel {
+    text-align:right;
+}
+
+    
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1000; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+ /* bottom: 30px; */ /* 30px from the bottom */
+  
+  top: 30px;
+  
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    tr td {
+        display: inline-block;
+        width: 100% !important;
+    }
+    .itemIMG {
+        width:50%;
+    }
+    .lstitem {
+        width: 100%;
+        min-height: 0px;
+    }
+    input[type=submit], input[type=button] {
+        width:50% !important;
+        min-width:0px;
+    }
+
+    .item table tr {
+        font-size: larger;
+    }
+
+    .thongso {
+        text-align: center;
+        width:50%;
+    }
+    .itemThongTin {
+    text-align:center;
+    font-size: larger;
+}
+
+         .btnxoasp{
+             margin-left:0px;
+        }
+    .lblthongtin {
+        width:100%;
+       
+       margin-bottom:5px;
+    }
+    .btnDatHang {
+    width:40%;
+    }
+    .td_btndel {
+    text-align:center;
+}
+    
+}
+
+ 

@@ -124,7 +124,7 @@ namespace TestUserSQL
         {
             DateTime tungay_temp = DateTime.Parse(this.txtTuNgay.Text.Trim());
             DateTime denngay_temp = DateTime.Parse(this.txtDenNgay.Text.Trim());
-            string sql = "select sum(iSoluong*cast(iDongia as bigint)+isnull(iPhuphi,0)) as [tong]";
+            string sql = "select isnull(sum(iSoluong*cast(iDongia as bigint)+isnull(iPhuphi,0)),0) as [tong]";
             sql = sql + "   from HOADON,CT_HOADON where HOADON.PK_iMahoadon = CT_HOADON.FK_iMahoadon";
             sql = sql + "   and HOADON.iTrangthai = 3  and dNgayLap >= '" + tungay_temp.ToString("MM-dd-yyyy") + "' and dNgayLap <= DATEADD(DAY, 1,'" + denngay_temp.ToString("MM-dd-yyyy") + "')";
             SqlConnection cnn = new SqlConnection(constr);

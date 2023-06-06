@@ -7,3 +7,4 @@ C:\Users\admin\OneDrive\Documents\Visual Studio 2012\Projects\TestUserSQL\TestUs
 C:\Users\admin\OneDrive\Documents\Visual Studio 2012\Projects\TestUserSQL\TestUserSQL\bin\ClosedXML.dll
 C:\Users\admin\OneDrive\Documents\Visual Studio 2012\Projects\TestUserSQL\TestUserSQL\bin\DocumentFormat.OpenXml.dll
 C:\Users\admin\OneDrive\Documents\Visual Studio 2012\Projects\TestUserSQL\TestUserSQL\bin\ClosedXML.xml
+C:\Users\admin\OneDrive\Documents\Visual Studio 2012\Projects\TestUserSQL\TestUserSQL\obj\Debug\TestUserSQL.csprojResolveAssemblyReference.cache

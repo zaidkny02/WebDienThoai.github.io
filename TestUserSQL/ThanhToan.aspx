@@ -75,11 +75,11 @@
             <table border="1" class="gridview" >
                 <tr>
                     <th style="width:50%;">Thanh toán sau</th>
-                    <th style="width:50%;">Thanh toán qua MoMo</th>
+                    <th style="width:50%; display:none;">Thanh toán qua MoMo</th>
                 </tr>
                 <tr>
                     <td><asp:Button ID="backbtn" Text="Quay lại" style="width:70%;" runat="server" OnClick="backbtn_Click" /></td>
-                    <td> <asp:LinkButton ID="thanhtoanlinkbtn" runat="server" OnClick="thanhtoanlinkbtn_Click">
+                    <td> <asp:LinkButton style="display:none;" ID="thanhtoanlinkbtn" runat="server" OnClick="thanhtoanlinkbtn_Click">
                             <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/MoMo_Logo.png" Height="100"  />
                     </asp:LinkButton>
 

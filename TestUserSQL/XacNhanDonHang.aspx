@@ -200,6 +200,7 @@
                       AllowSorting="true" OnSorting="grvHoaDon_Sorting" >
                     
                     <Columns>
+                       
                         <asp:TemplateField HeaderText="Mã hóa đơn" HeaderStyle-HorizontalAlign="Center" HeaderStyle-Width="5%" >
                             <ItemTemplate>
                                 <asp:label id="lblhd_mahoadon" runat="server" Text=' <%#Eval("PK_iMahoadon") %> '></asp:label>
@@ -240,6 +241,7 @@
                                     <asp:LinkButton ID="lkbtnChiTiet"   CommandArgument='<%# Eval("PK_iMahoadon") %>' runat="server" ToolTip="Chi tiết" OnClientClick='<%# "createpopup(" + Eval("PK_iMahoadon") + ")"%>'  >
                                             <img src="/images/detail.png" border=0 />
                                         </asp:LinkButton>
+                                    
                                 </ItemTemplate>
                             </asp:TemplateField>
                         <asp:TemplateField HeaderText="Trạng thái" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" HeaderStyle-Width="8%"  >

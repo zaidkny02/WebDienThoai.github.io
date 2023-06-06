@@ -75,6 +75,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TestDA_test1.mdf" />
+    <Content Include="App_Data\TestDA_test1_log.ldf" />
     <Content Include="ChiTietDonHang.aspx" />
     <Content Include="css\ChiTietSP_CSS.css" />
     <Content Include="css\GioHang.css" />
